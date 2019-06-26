@@ -1,0 +1,57 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "npm run module-Slideshow && expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "test": "jest",
+    "module-Slideshow": "node scripts/scriptNmodule.js"
+  },
+  "jest": {
+    "preset": "react-native",
+    "snapshotSerializers": [
+      "./node_modules/jest-serializer-enzyme"
+    ]
+  },
+  "dependencies": {
+    "enzyme": "^3.9.0",
+    "expo": "^32.0.0",
+    "jest-serializer-enzyme": "^1.0.0",
+    "jwt-decode": "^2.2.0",
+    "link": "^0.1.5",
+    "moment": "^2.24.0",
+    "nodemailer": "^6.2.1",
+    "prop-types": "^15.7.2",
+    "react": "16.5.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-axios": "^0.17.1",
+    "react-native-elements": "^1.1.0",
+    "react-native-image-picker": "^0.28.1",
+    "react-native-link": "^4.1.0",
+    "react-native-maps": "^0.24.2",
+    "react-native-pure-jwt": "^2.1.0",
+    "react-native-reanimated": "^1.0.1",
+    "react-native-select-input-ios": "^2.0.2",
+    "react-native-simple-dialogs": "^1.1.0",
+    "react-native-slideshow": "^1.0.1",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.9.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-expo": "^5.0.0",
+    "jest": "^24.8.0",
+    "jest-expo": "^32.0.0",
+    "react-docgen": "^4.1.1",
+    "react-test-renderer": "^16.8.6"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
+  "private": true
+}

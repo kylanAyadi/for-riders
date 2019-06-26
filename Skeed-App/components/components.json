@@ -1,0 +1,456 @@
+[
+  {
+    "description": "",
+    "displayName": "Documentation",
+    "methods": [
+      {
+        "name": "showdocs",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/documentation.js"
+  },
+  {
+    "description": "Class geolocation permet d'afficher la map et ses markers",
+    "displayName": "Geolocation",
+    "methods": [
+      {
+        "name": "_handleMapRegionChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "mapRegion",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "_getLocationAsync",
+        "docblock": null,
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "markers",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/geolocation.js"
+  },
+  {
+    "description": "Class Homepage est la page d'accueil affichée à l'utilisateur non connecté",
+    "displayName": "Homepage",
+    "methods": [],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/homepage.js"
+  },
+  {
+    "description": "Class HomeIn est la page d'accueil affichée à l'utilisateur  connecté",
+    "displayName": "HomeIn",
+    "methods": [
+      {
+        "name": "_textInputTitle",
+        "docblock": "Description: Affectation du texte saisi dans le champs title à la variable this.title",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "title"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Affectation du texte saisi dans le champs title à la variable this.title"
+      },
+      {
+        "name": "_textInputDescription",
+        "docblock": "Description: Affectation du texte saisi dans le champs description à la variable this.description",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "description"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Affectation du texte saisi dans le champs description à la variable this.description"
+      },
+      {
+        "name": "saveLocation",
+        "docblock": "Description: Récupération de la position de géolocalisation de l'utilisateur au moment de l'appuie sur le bouton Add Spot",
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null,
+        "description": "Description: Récupération de la position de géolocalisation de l'utilisateur au moment de l'appuie sur le bouton Add Spot"
+      },
+      {
+        "name": "addSpot",
+        "docblock": "Description: addSpot est une fonction qui permet à l'utilisateur de marquer sa position comme étant un spot que d'autre utilisateur verront sur leur map avec un titre, une description et un niveau de difficulté",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: addSpot est une fonction qui permet à l'utilisateur de marquer sa position comme étant un spot que d'autre utilisateur verront sur leur map avec un titre, une description et un niveau de difficulté"
+      },
+      {
+        "name": "logOut",
+        "docblock": "Description: Fonction logOut qui permet à l'utilisatuer de se déconnecter en supprimant le token géréné puis est redirigé vers la Homepage",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Fonction logOut qui permet à l'utilisatuer de se déconnecter en supprimant le token géréné puis est redirigé vers la Homepage"
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/homein.js"
+  },
+  {
+    "description": "",
+    "displayName": "Login",
+    "methods": [
+      {
+        "name": "_TextInputUser",
+        "docblock": "Description: Initialisation de la variable this.user_name avec la variable username",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "username"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la variable this.user_name avec la variable username"
+      },
+      {
+        "name": "_TextInputPassword",
+        "docblock": "Description: Initialisation de la variable this.user_password avec la variable password",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "password"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la variable this.user_password avec la variable password"
+      },
+      {
+        "name": "login",
+        "docblock": "Description: Gestion des champs récupérés et envoi des données vers le backend",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Gestion des champs récupérés et envoi des données vers le backend"
+      },
+      {
+        "name": "callGraph",
+        "docblock": "Description : Récupération du token et appel API pour récupération des champs USER",
+        "modifiers": [
+          "async"
+        ],
+        "params": [
+          {
+            "name": "token"
+          }
+        ],
+        "returns": null,
+        "description": "Description : Récupération du token et appel API pour récupération des champs USER"
+      },
+      {
+        "name": "facebook_auth",
+        "docblock": "Description : demande permission de connexion via facebook\nUne fois l'autorisation obtenue l'appel API est lancé pour récupération des données",
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null,
+        "description": "Description : demande permission de connexion via facebook\nUne fois l'autorisation obtenue l'appel API est lancé pour récupération des données"
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/login.js"
+  },
+  {
+    "description": "Class Profile  affiche le profil de l'utilisateur",
+    "displayName": "Profile",
+    "methods": [
+      {
+        "name": "logOut",
+        "docblock": "Description: Supprime le token pour déconnecter l'utilisateur puis redirection sur Homepage",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Supprime le token pour déconnecter l'utilisateur puis redirection sur Homepage"
+      },
+      {
+        "name": "unsubscribe",
+        "docblock": "Description: Supprime le token ainsi que le compte de l'utilisateur, puis redirection sur la Homepage",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Supprime le token ainsi que le compte de l'utilisateur, puis redirection sur la Homepage"
+      },
+      {
+        "name": "_displayLoading",
+        "docblock": "Description: Affiche un icone de chargement quand la page se charge",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Affiche un icone de chargement quand la page se charge"
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/profile.js"
+  },
+  {
+    "description": "Class qui va permettre à l'utilisateur de créer un compte.",
+    "displayName": "Register",
+    "methods": [
+      {
+        "name": "onSubmitEditingSmall1",
+        "docblock": "Description: Initialisation de la valeur de l'input \"sex\" à value.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"sex\" à value."
+      },
+      {
+        "name": "getPickerOptions",
+        "docblock": "Description: Défini les options possible dans l'input \"sex\".",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Défini les options possible dans l'input \"sex\"."
+      },
+      {
+        "name": "_textInputUsername",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Username\" à username.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "username"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Username\" à username."
+      },
+      {
+        "name": "_textInputEmail",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Email\" à email.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "email"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Email\" à email."
+      },
+      {
+        "name": "_textInputAge",
+        "docblock": "Description: Initialisation de la valeur de l'input \"âge\" à âge.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "age"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"âge\" à âge."
+      },
+      {
+        "name": "_textInputPassword",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Password\" à password.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "password"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Password\" à password."
+      },
+      {
+        "name": "_textInputPassword_confirm",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Password Confirm\" à password confirm.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "password_confirm"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Password Confirm\" à password confirm."
+      },
+      {
+        "name": "register",
+        "docblock": "Fonction register pour envoyer les informations du formulaire vers le back.",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Fonction register pour envoyer les informations du formulaire vers le back."
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/register.js"
+  },
+  {
+    "description": "Class Account qui permet à l'utilisateur de modifier ses informations personnel de compte",
+    "displayName": "Account",
+    "methods": [
+      {
+        "name": "setVariables",
+        "docblock": "Description: permet d'assigner aux variables du constructor leur valeur correspondante de l'utilisateur lors du chargement de la vue",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: permet d'assigner aux variables du constructor leur valeur correspondante de l'utilisateur lors du chargement de la vue"
+      },
+      {
+        "name": "onSubmitEditingSmall1",
+        "docblock": "Description: Initialisation de la valeur de l'input \"sex\" à value.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"sex\" à value."
+      },
+      {
+        "name": "getPickerOptions",
+        "docblock": "Description: Défini les options possible dans l'input \"sex\".",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "Description: Défini les options possible dans l'input \"sex\"."
+      },
+      {
+        "name": "_textInputUsername",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Username\" à username.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "username"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Username\" à username."
+      },
+      {
+        "name": "_textInputEmail",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Email\" à email.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "email"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Email\" à email."
+      },
+      {
+        "name": "_textInputAge",
+        "docblock": "Description: Initialisation de la valeur de l'input \"âge\" à âge.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "age"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"âge\" à âge."
+      },
+      {
+        "name": "_textInputPassword",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Password\" à password.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "password"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Password\" à password."
+      },
+      {
+        "name": "_textInputPassword_confirm",
+        "docblock": "Description: Initialisation de la valeur de l'input \"Password Confirm\" à password confirm.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "password_confirm"
+          }
+        ],
+        "returns": null,
+        "description": "Description: Initialisation de la valeur de l'input \"Password Confirm\" à password confirm."
+      },
+      {
+        "name": "askPermissionsAsync",
+        "docblock": "Description: askpermissionAsync est une fonction qui permet de demander à l'utilisateur l'autorisation d'accéder à son appareil photo intégré ou bien d'accéder à son dossier photo sur son téléphone",
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null,
+        "description": "Description: askpermissionAsync est une fonction qui permet de demander à l'utilisateur l'autorisation d'accéder à son appareil photo intégré ou bien d'accéder à son dossier photo sur son téléphone"
+      },
+      {
+        "name": "handleChoosePhoto",
+        "docblock": "Description: handleChoosePhoto est une fonction qui permet à l'utilisateur d'accéder à son dossier photo en lui demandant l'autorisation, pour choisir une photo et stock celle ci dans la variable avatar",
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null,
+        "description": "Description: handleChoosePhoto est une fonction qui permet à l'utilisateur d'accéder à son dossier photo en lui demandant l'autorisation, pour choisir une photo et stock celle ci dans la variable avatar"
+      },
+      {
+        "name": "handleTakePhoto",
+        "docblock": "Description: handleTakePhoto est une fonction qui permet à l'utilisateur d'accéder à son appareil photo integré en lui demandant l'autorisation, pour prendre une photo et stock celle ci dans la variable avatar",
+        "modifiers": [
+          "async"
+        ],
+        "params": [],
+        "returns": null,
+        "description": "Description: handleTakePhoto est une fonction qui permet à l'utilisateur d'accéder à son appareil photo integré en lui demandant l'autorisation, pour prendre une photo et stock celle ci dans la variable avatar"
+      },
+      {
+        "name": "modifyField",
+        "docblock": "Description: modifyField est une fonction qui permet en fonction du choix de l'utilisateur du champs qu'il veut modifier, d'avoir une boite de dialogue qui s'ouvre correspondant à son choix.\nEnsuite il peut faire sa modification dans la boite de dialogue et il a le choix de confirmer sa modification ou bien de l'annuler.",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "field"
+          }
+        ],
+        "returns": null,
+        "description": "Description: modifyField est une fonction qui permet en fonction du choix de l'utilisateur du champs qu'il veut modifier, d'avoir une boite de dialogue qui s'ouvre correspondant à son choix.\nEnsuite il peut faire sa modification dans la boite de dialogue et il a le choix de confirmer sa modification ou bien de l'annuler."
+      },
+      {
+        "name": "_displayLoading",
+        "docblock": "_displayLoading est une fonction qui permet d'afficher sur la vue un cercle de chargement de donnée",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "_displayLoading est une fonction qui permet d'afficher sur la vue un cercle de chargement de donnée"
+      },
+      {
+        "name": "_onSubmitted",
+        "docblock": "_onSubmitted est une fonction qui permet à l'utilisateur de valider ses choix de modication, et de faire les remplacements dans la base de donnée",
+        "modifiers": [],
+        "params": [],
+        "returns": null,
+        "description": "_onSubmitted est une fonction qui permet à l'utilisateur de valider ses choix de modication, et de faire les remplacements dans la base de donnée"
+      }
+    ],
+    "filename": "me/kylan/Documents/Rendu/skeed/Skeed-App/components/account.js"
+  }
+]
